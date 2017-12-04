@@ -6,9 +6,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 h1 {
-  font-size: 100px;
+  font-size: 50px;
   font-family: 'Open Sans', sans-serif;
   margin: 0 0 0 0;
+  float: left;
 }
 /*
 input {
@@ -17,7 +18,7 @@ input {
 }*/
 
 .container {
-  height: 40vw;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -27,8 +28,8 @@ input {
   border-bottom: 1px solid;
   border-color: #B8B8B8;
   border-radius: 10px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  /*padding-bottom: 30px;
+  padding-top: 30px;*/
   box-shadow: 0px 0px 0px #888888;
   background-color: #8E1135;
   color: white;
@@ -37,7 +38,7 @@ input {
 }
 
 .profilepic {
-  width: 18%; 
+  width: 18%;
   height: auto;
   border-style: solid;
   border-radius: 10px;
@@ -91,15 +92,17 @@ ul{
   height: 10vw;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 6vw;
-  text-align: initial;
+  text-align: center;
   padding-top: 0.25vw;
   padding-bottom: 0.25vw;
 }
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 button{
   font-family: 'Barlow', sans-serif;
-  width: 15vw;
-  height: 50px;
+  /*width: 15vw;
+  height: 5vw;*/
+  padding-bottom: 5px;
+  padding-top: 5px;
   font-size: 2vw;
   color: #000000;
   background-color: #E8780C;
@@ -117,7 +120,7 @@ button{
   box-shadow: 3px 3px 3px #888888;
 }
 
-li{ 
+li{
   text-align: left;
   width: 100%;
   align-items: center;

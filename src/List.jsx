@@ -27,14 +27,20 @@ class List extends Component {
         const items = this.props.items.map(item => {
           return (
               <div className="container">
-                <img className="profilepic" src={item.src}></img>
+                <img className="profilepic" src={item.src} />
                   <div className="text">
                     <li className="name" key={item.name}>{item.name}</li>
-                    <li className="author" key={item.author}>By {item.author}</li>
-                    <li className="genre" key={item.genre}>{item.genre}</li>
-                    <li className="author" key={item.page}>{item.page} pages</li>
-                    <li className="price" key={item.price}>${item.price}</li>
-                    <button>Purchase Now</button>
+                    <li style={{display: "flex", flexDirection: "row", justifyContent: 'space-between'}}>
+                        <div>
+                            <div className="author" key={item.author}>By {item.author}</div>
+                            <div className="genre" key={item.genre}>{item.genre}</div>
+                            <div className="author" key={item.page}>{item.page} pages</div>
+                        </div>
+                        <div>
+                            <li className="price" key={item.price}>${item.price}</li>
+                            <button>Purchase Now</button>
+                        </div>
+                    </li>
                   </div>
               </div>)
           });
