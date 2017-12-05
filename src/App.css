@@ -255,26 +255,27 @@ li{
 /* From here*/
 
 .App-header {
-  background-color: #2F2F2F;
-  height: 150px;
+  background-color: #41210a;
+  height: 250px;
   padding: 20px;
   color: black;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 5px 5px 5px #888888;
 
 }
 .Logo {
   font-family: 'Open Sans', sans-serif;;
   color: #ffffff;
-  float: left;
   font-size: 50px;
-
 }
 
 .Search {
   align-items: center;
   justify-content: center;
   padding: 0 15px;
-  text-align: right;
 }
 .Options {
 
@@ -285,7 +286,6 @@ li{
     width: 25%;
     min-width: 150px;
     color: black;
-    padding-left: 10px;
 }
 
 .Title {
@@ -297,7 +297,8 @@ li{
 
 .Choices {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
 .Card {

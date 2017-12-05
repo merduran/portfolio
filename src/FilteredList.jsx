@@ -163,7 +163,8 @@ class FilteredList extends Component {
                             </label>
                         </div>
                     </div>
-               </div>
+            </div>
+
             <List items={this.props.items.filter(this.filterItem)} />
         </div>
 
