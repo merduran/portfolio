@@ -17,7 +17,7 @@ class List extends Component {
    renderList() {
         const items = this.props.items.map(item => {
           return (
-              <Card className="Card" name={item.name} pages={item.page} author={item.author} image ={item.src} price={item.price} genre={item.genre} />
+              <Card className="Card" name={item.name} pages={item.page} author={item.author} image ={item.src} price={item.price} genre={item.genre} site={item.site} />
                 )
           });
        return items;
