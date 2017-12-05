@@ -16,10 +16,12 @@ class FilteredList extends Component {
            sort: "",
        };
    }
+
     // Sets the state whenever the user types on the search bar
    onSearch = (event) => {
        this.setState({search: event.target.value.trim().toLowerCase()});
    }
+
 
    filterItem = (item) => {
         // Checks if the current search term is contained in this item
