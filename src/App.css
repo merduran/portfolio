@@ -1,6 +1,7 @@
 .App {
   justify-content: center;
   text-align: center;
+  background-color: #F4ECE6;
 }
 
 .description{
@@ -8,7 +9,8 @@
   flex-wrap: wrap; 
   flex-direction: row;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 2vw;
+  font-size: 1vw;
+  max-height: 100px;
   background-color: #F4ECE6;
 }
 
