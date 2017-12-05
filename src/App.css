@@ -262,13 +262,17 @@ li{
 .Search {
   align-items: center;
   justify-content: center;
-  display: inline-block;
   padding: 0 15px;
+  text-align: right;
+}
+.Options {
+
 }
 
 .Input {
     display:inline-block;
-    border-radius: 26px;
+    width: 25%;
+    min-width: 150px;
     color: black;
     padding-left: 10px;
 }
@@ -278,6 +282,11 @@ li{
     font-size: 20px;
     padding-right: 15px;
     color: #ffffff;
+}
+
+.Choices {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* To here */
