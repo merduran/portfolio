@@ -17,14 +17,14 @@ class MyPopup extends Component {
                 <button onClick={this.props.closePopup} className ="exitButton"></button>
               </div>
               <div className="popup_div" style={{height: "40%"}}>
-                <img/>
+                <img src={this.props.image} />
                 <div className="text" style={{margin: "0px", width: "60%", height: "100%", paddingLeft: "20px", paddingRight: "20px", paddingTop: "0px"}}>
                     <li style={{display: "flex", flexDirection: "row", justifyContent: 'space-between', height: "100vh"}}>
                          <div style={{width: "100%", height: "100%", rightPadding: "20px"}}>
                             <li className="name" style={{marginBottom:"5px", padding: "0"}}>{this.props.name}</li>
-                            <div className="author" style={{marginBottom:"5px", padding: "0"}}>Author</div>
-                            <div className="genre" style={{marginBottom:"5px", padding: "0"}}>Genre</div>
-                            <div className="author" style={{marginBottom:"5px", padding: "0"}}>Pages</div>
+                            <div className="author" style={{marginBottom:"5px", padding: "0"}}>By: {this.props.author}</div>
+                            <div className="genre" style={{marginBottom:"5px", padding: "0"}}>Genre: {this.props.genre}</div>
+                            <div className="author" style={{marginBottom:"5px", padding: "0"}}>Pages: {this.props.pages}</div>
                         </div>
                     </li>
                   </div>
