@@ -2,6 +2,7 @@
   justify-content: center;
   text-align: center;
   background-color: #F4ECE6;
+  min-height: 100vh;
 }
 
 .description{
@@ -256,7 +257,6 @@ li{
 
 .App-header {
   background-color: #41210a;
-  height: 250px;
   padding: 20px;
   color: black;
   text-align: center;
