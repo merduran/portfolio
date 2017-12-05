@@ -3,8 +3,18 @@
   text-align: center;
 }
 
+.exitButton{
+  float: right;
+  height: 20px;
+  width: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  background-color: white;
+  border-radius: 0px
+
+}
+
 .popup {
-  background-color: black;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -14,15 +24,36 @@
   bottom: 0;
   margin: auto;
   background-color: rgba(0,0,0, 0.5);
+  justify-content: space-between;
+
 }
 .popup_inner {
-  position: absolute;
-  left: 25%;
-  right: 25%;
-  top: 25%;
-  bottom: 25%;
-  margin: auto;
+  align-items: center;
+  width: 60vw;
+  height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vw;
   background: white;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+.popup_div{
+  width: 100%;
+  background-color: yellow;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+/*  border-color: black;
+*/}
+
+.top{
+  width: 100%;
+  background-color: black;
+  height: 10%;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
@@ -67,6 +98,15 @@ input {
   float: left;
   box-shadow: 5px 5px 5px #888888;
   margin: 30px;
+}
+
+img{
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  margin: 0px;
+  float: left;
+  margin-left: 2vw;
 }
 
 .text {
