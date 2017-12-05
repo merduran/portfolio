@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import FilteredList from './FilteredList';
+import MyPopup from './Popup';
+
 /*
     This list of produce that is passed into the FilteredList component.
     Notice that it is a list of javascript objects where {key: value}.
@@ -29,6 +31,7 @@ class App extends Component {
                   component the items property.
                 */}
                <FilteredList items={produce} />
+               <MyPopup>AMCIK</MyPopup>
            </div>
        );
    }
