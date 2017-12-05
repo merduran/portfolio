@@ -32,7 +32,6 @@ class List extends Component {
                     </div>
                 </div>)
           });
-
        return items;
    }
 
@@ -42,7 +41,7 @@ class List extends Component {
                <ul>
                    {this.renderList()}
                </ul>
-               {this.state.showPopup ? <MyPopup closePopup={this.togglePopup.bind(this)}/> : null }
+               {this.state.showPopup ? <MyPopup closePopup={this.togglePopup.bind(this)} name={this.props.items.name} author={this.props.items.author} price={this.props.items.price} pages={this.props.items.pages}/> : null }
             </div>
        );
    }
