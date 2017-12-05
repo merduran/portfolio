@@ -31,8 +31,6 @@ class App extends Component {
                   component the items property.
                 */}
                <FilteredList items={produce} />
-               <MyPopup>AMCIK
-               </MyPopup>
            </div>
        );
    }
