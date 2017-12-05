@@ -41,7 +41,7 @@ class FilteredList extends Component {
       }
    }
     /* TODO: Add an event handling method for when an item in dropdown is selected
-       Per the DropdownButton documentation, this function should take in an eventKey and    
+       Per the DropdownButton documentation, this function should take in an eventKey and
        event
     */
     setGenre = (eventKey) => {
@@ -112,41 +112,58 @@ class FilteredList extends Component {
               return a.page - b.page;
             });
           }
-          this.setState({items:this.props.items});   
+          this.setState({items:this.props.items});
     }
     render() {
        return (
         <div>
-            <div className="filter-list">
-               <h1>Remzi Kitabevi</h1>
-                {/* TODO: Add more menu items with onSelect handlers*/}
-                  <input type="text" placeholder="Search" onChange={this.onSearch} />
-                  <div className="dropdownContainer">
-                     <DropdownButton id="typeDropdown" title={"Select genre"} className="dropdown">
-                       <MenuItem eventKey="All" onSelect= {this.setGenre}>All</MenuItem>
-                       <MenuItem eventKey="Children" onSelect= {this.setGenre}>Children</MenuItem>
-                       <MenuItem eventKey="Mystery" onSelect= {this.setGenre}>Mystery</MenuItem>
-                       <MenuItem eventKey="Love" onSelect= {this.setGenre}>Love</MenuItem>
-                       <MenuItem eventKey="Philosophy" onSelect= {this.setGenre}>Philosophy</MenuItem>
-                     </DropdownButton>
-                     <DropdownButton id="priceRangeDropdown" title={"Select price range"} className="dropdown">
-                      <MenuItem eventKey="all" onSelect= {this.setPriceRange}>All</MenuItem>
-                       <MenuItem eventKey="first" onSelect= {this.setPriceRange}>$5 - $8</MenuItem>
-                       <MenuItem eventKey="second" onSelect= {this.setPriceRange}>$8 - $11</MenuItem>
-                       <MenuItem eventKey="third" onSelect= {this.setPriceRange}>$11 - $14</MenuItem>
-                       <MenuItem eventKey="fourth" onSelect= {this.setPriceRange}>$14 - $17</MenuItem>
-                     </DropdownButton>
-                     <DropdownButton id="priceRangeDropdown" title={"Sort"} className="dropdown">
-                      <MenuItem eventKey="default" onSelect= {this.sortList}>Default</MenuItem>
-                      <MenuItem eventKey="price" onSelect= {this.sortList}>By Price</MenuItem>
-                      <MenuItem eventKey="page" onSelect= {this.sortList}>By Page</MenuItem>
-                     </DropdownButton>
-                    </div>
-                </div>
-                    <List items={this.props.items.filter(this.filterItem)} />
-                    </div>
 
-            
+            <div className="App-header">
+                    <h1 className="Logo">Remzi Kitabevi</h1>
+                    <div style={{alignContent: 'center'}}>
+                        <label className="Search">
+                            <h2 className="Title">Search</h2>
+                            <input className="Input" type="text" placeholder="which book..." onChange={this.onSearch} />
+                        </label>
+
+                        <div className="Choices">
+                            <label className="Search">
+                                <h2 className="Title">Genre</h2>
+                                <DropdownButton id="typeDropdown" title={"Genre"}>
+                                    <MenuItem eventKey="All" onSelect= {this.setGenre}>All</MenuItem>
+                                    <MenuItem eventKey="Children" onSelect= {this.setGenre}>Children</MenuItem>
+                                    <MenuItem eventKey="Mystery" onSelect= {this.setGenre}>Mystery</MenuItem>
+                                    <MenuItem eventKey="Love" onSelect= {this.setGenre}>Love</MenuItem>
+                                    <MenuItem eventKey="Philosophy" onSelect= {this.setGenre}>Philosophy</MenuItem>
+                                </DropdownButton>
+                            </label>
+
+                            <label className="Search">
+                                <h2 className="Title">Price Range</h2>
+                                <DropdownButton id="typeDropdown" title={"Range"}>
+                                    <MenuItem eventKey="all" onSelect= {this.setPriceRange}>All</MenuItem>
+                                    <MenuItem eventKey="first" onSelect= {this.setPriceRange}>$5 - $8</MenuItem>
+                                    <MenuItem eventKey="second" onSelect= {this.setPriceRange}>$8 - $11</MenuItem>
+                                    <MenuItem eventKey="third" onSelect= {this.setPriceRange}>$11 - $14</MenuItem>
+                                    <MenuItem eventKey="fourth" onSelect= {this.setPriceRange}>$14 - $17</MenuItem>
+                                </DropdownButton>
+                            </label>
+
+                            <label className="Search">
+                                <h2 className="Title">Sort By</h2>
+                                <DropdownButton id="typeDropdown" title={"Sort"}>
+                                    <MenuItem eventKey="default" onSelect= {this.sortList}>Default</MenuItem>
+                                    <MenuItem eventKey="price" onSelect= {this.sortList}>By Price</MenuItem>
+                                    <MenuItem eventKey="page" onSelect= {this.sortList}>By Page</MenuItem>
+                                </DropdownButton>
+                            </label>
+                        </div>
+                    </div>
+               </div>
+            <List items={this.props.items.filter(this.filterItem)} />
+        </div>
+
+
        );
    }
 }

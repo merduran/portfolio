@@ -127,7 +127,7 @@ li{
   list-style-type: none;
 }
 
-input {
+/*input {
   border-radius: 7px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -138,11 +138,10 @@ input {
   box-shadow: 5px 5px 5px #888888;
   border-width: 0.1px;
 
-}
+}*/
 
 .btn {
   background-color: white;
-  box-shadow: 5px 5px 5px #888888;
   border-width: 0.1px;
   border-radius: 7px;
 }
@@ -157,10 +156,9 @@ input {
 }
 
 .dropdown{
-  width: 30vw;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.5vw;
+
 }
 
 .App-logo {
@@ -168,12 +166,12 @@ input {
   height: 80px;
 }
 
-.App-header {
+/*.App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
-}
+}*/
 
 .App-title {
   font-size: 1.5em;
@@ -182,6 +180,46 @@ input {
 .App-intro {
   font-size: large;
 }
+/* From here*/
+
+.App-header {
+  background-color: #2F2F2F;
+  height: 150px;
+  padding: 20px;
+  color: black;
+  text-align: center;
+
+}
+.Logo {
+  font-family: Impact;
+  color: #ffcb05;
+  float: left;
+  font-size: 50px;
+
+}
+
+.Search {
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.Input {
+    display:inline-block;
+    border-radius: 26px;
+    color: black;
+    padding-left: 10px;
+}
+
+.Title {
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 15px;
+    color: #ffcb05;
+}
+
+/* To here */
 
 
 @keyframes App-logo-spin {
