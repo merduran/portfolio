@@ -16,7 +16,6 @@ class MyPopup extends Component {
               <div className="top">
                 <button onClick={this.props.closePopup} className ="exitButton"></button>
               </div>
-              <div className="popup_div">
               <div className="popup_div" style={{height: "40%"}}>
                 <img/>
                 <div className="text" style={{margin: "0px", width: "40%", padding: "0px", height: "100%"}}>
@@ -31,18 +30,15 @@ class MyPopup extends Component {
                     </li>
                   </div>
               </div>
-              
               <div className="popup_div" style={{background: "blue"}}>
               </div>
               <div className="popup_div" style={{background: "green"}}>
-                <div className="price" style={{textAlign: "left"}}>Price</div>
               <div className="text" style={{margin: "auto", width: "40%", padding: "0px", height: "100%", display: "flex", flexDirection: "column", justifyContent: 'space-between', height: "70%"}}>
                             <div className="price" style={{textAlign: "center"}}>Price</div>
                             <button>Purchase Now</button>
                             <button>Add to Cart</button>
                   </div>
               </div>
-              
             </div>
             </div>
         );
