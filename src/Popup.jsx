@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Popup from 'react-popup';
 import './App.css';
 
 /*
@@ -21,7 +20,7 @@ class MyPopup extends Component {
                 <div className="text" style={{margin: "0px", width: "60%", height: "100%", paddingLeft: "20px", paddingRight: "20px", paddingTop: "0px"}}>
                     <li style={{display: "flex", flexDirection: "row", justifyContent: 'space-between', height: "100vh"}}>
                          <div style={{width: "100%", height: "100%", rightPadding: "20px"}}>
-                            <li className="name" style={{marginBottom:"5px", padding: "0"}}>{this.props.name}</li>
+                            <div className="name" style={{marginBottom:"5px", padding: "0"}}>{this.props.name}</div>
                             <div className="author" style={{marginBottom:"5px", padding: "0"}}>By: {this.props.author}</div>
                             <div className="genre" style={{marginBottom:"5px", padding: "0"}}>Genre: {this.props.genre}</div>
                             <div className="author" style={{marginBottom:"5px", padding: "0"}}>Pages: {this.props.pages}</div>
@@ -30,10 +29,10 @@ class MyPopup extends Component {
                   </div>
               </div>
               <div className="popup_div" style={{background: "blue", display: "flex", flexDirection: "column", justifyContent: 'space-between'}}>
-                <div className="description" style={{margin:"auto"}}>Description <br/> 
+                <div className="description" style={{margin:"auto"}}>Description <br/>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </div>
-                <div className="description" style={{margin:"auto"}}>Description <br/> 
+                <div className="description" style={{margin:"auto"}}>Description <br/>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </div>
               </div>
