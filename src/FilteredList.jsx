@@ -123,7 +123,14 @@ class FilteredList extends Component {
         <div>
 
             <div className="App-header">
-                    <h1 className="Logo">Remzi Kitabevi</h1>
+                    <div className="Banner">
+                        <h2 className="Title">Click a Book!</h2>
+                    </div>
+
+                    <div style={{display: 'flex', flexDirection: 'column', Color: 'white'}}>
+                        <h1 className="Logo">Remzi Kitabevi</h1>
+                        <p style={{fontFamily: 'Open Sans', color: 'white'}}>See the <b>Top 12 Books</b> from across the Internet in one place</p>
+                    </div>
                     <div className="Options">
                         <div className="Search">
                             <h2 className="Title">Search</h2>
