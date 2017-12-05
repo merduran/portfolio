@@ -23,6 +23,7 @@ class List extends Component {
    renderList() {
         const items = this.props.items.map(item => {
           return (
+<<<<<<< HEAD
               <div className="container">
                 <img onClick={this.togglePopup.bind(this)} className="profilepic" src={item.src} />
                   <div className="text">
@@ -40,6 +41,16 @@ class List extends Component {
                     </li>
                   </div>
               </div>)
+=======
+                <div className="Card">
+                    <div className="Border">
+                    <li className="BookTitle" key={item.name}>{item.name}</li>
+                    <div className="BookAuthor" key={item.author}>By {item.author}</div>
+                    <img className="Book" onClick={this.togglePopup.bind(this)} src={item.src} />
+                    <div className="BookPrice" key={item.price}>${item.price}</div>
+                    </div>
+                </div>)
+>>>>>>> b2f522675677133800a325da2f6521ed478b6bec
           });
 
        return items;

@@ -1,7 +1,6 @@
 .App {
   justify-content: center;
   text-align: center;
-  background-color: red;
 }
 
 .description{
@@ -10,6 +9,7 @@
   flex-direction: row;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2vw;
+  background-color: #F4ECE6;
 }
 
 .exitButton{
@@ -297,6 +297,49 @@ li{
 .Choices {
     display: flex;
     justify-content: flex-end;
+}
+
+.Card {
+  border-radius: 10px;
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  margin: 1em;
+}
+
+.Book {
+  width: 100px;
+  height: 150px;
+  border-style: solid;
+  float: none;
+  box-shadow: 5px 5px 5px #888888;
+  margin: 15px;
+}
+
+.Border {
+    float: none;
+    border: 10px #964a0e solid;
+    height: 60%;
+}
+
+.BookTitle {
+    white-space: nowrap;
+    width: 10em;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: auto;
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.BookAuthor {
+    font-size: 10px;
+}
+
+.BookPrice {
+    font-size: 13px;
+
 }
 
 /* To here */
