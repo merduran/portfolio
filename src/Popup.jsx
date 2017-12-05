@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-
+// import { Link } from 'react-router';
+// import { Link } from 'react-router-dom';
 /*
  The list component will take the list of items passed in as a property
  and create an HTML list with those item. In this example, we are passing in the
@@ -8,6 +9,10 @@ import './App.css';
   as long as it has a name.
 */
 class MyPopup extends Component {
+    constructor() {
+      super();
+    }
+
    render() {
        return (
           <div className='popup'>
@@ -50,7 +55,7 @@ class MyPopup extends Component {
               <div className="popup_div" style={{height: "20%"}}>
               <div className="text" style={{margin: "auto", width: "40%", padding: "0px", height: "100%", display: "flex", flexDirection: "column", alignContent: "center", height: "100%"}}>
                             <div className="price" style={{margin: "auto", padding:"0", textAlign: "center"}}>${this.props.price}</div>
-                              <button style={{margin: "auto", paddingTop: "0", paddingBottom: "0"}}>Purchase Now</button>
+                             <button style={{margin: "auto", paddingTop: "0", paddingBottom: "0"}}>Purchase Now</button>
                               <button style={{margin: "auto", marginBottom: "20px", paddingTop: "0", paddingBottom: "0"}}>Add to Cart</button>
                             </div>
               </div>
