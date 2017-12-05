@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Popup from 'react-popup';
+import './App.css';
+
 /*
  The list component will take the list of items passed in as a property
  and create an HTML list with those item. In this example, we are passing in the
@@ -11,10 +13,35 @@ class MyPopup extends Component {
        return (
           <div className='popup'>
             <div className='popup_inner'>
-              <h1>{this.props.text}</h1>
-            <button onClick={this.props.closePopup}>close me</button>
+              <div className="top">
+                <button onClick={this.props.closePopup} className ="exitButton"></button>
+              </div>
+              <div className="popup_div">
+                <img/>
+
+                <div className="text" style={{margin: "0px", width: "40%"}}>
+                    <li className="name"> Name</li>
+                    <li style={{display: "flex", flexDirection: "row", justifyContent: 'space-between'}}>
+                        <div>
+                            <div className="author">Author</div>
+                            <div className="genre">Genre</div>
+                            <div className="author">Pages</div>
+                            <div className="author">Description</div>
+                        </div>
+                    </li>
+                  </div>
+              </div>
+
+
+              </div>
+              <div className="popup_div" style={{background: "blue"}}>
+              </div>
+              <div className="popup_div" style={{background: "green"}}>
+                <div className="price" style={{textAlign: "left"}}>Price</div>
+                            <button>Purchase Now</button>
+              </div>
+              
             </div>
-          </div>
         );
    }
 }
