@@ -29,19 +29,19 @@ class MyPopup extends Component {
                     </li>
                   </div>
               </div>
-              <div className="popup_div" style={{background: "blue"}}>
-                <div className="description">Description <br/> 
+              <div className="popup_div" style={{background: "blue", display: "flex", flexDirection: "column", justifyContent: 'space-between'}}>
+                <div className="description" style={{margin:"auto"}}>Description <br/> 
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </div>
-                <div className="description">Description <br/> 
+                <div className="description" style={{margin:"auto"}}>Description <br/> 
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </div>
               </div>
               <div className="popup_div" style={{background: "green", height: "20%"}}>
-              <div className="text" style={{margin: "auto", width: "40%", padding: "0px", height: "100%", display: "flex", flexDirection: "column", justifyContent: 'space-between', height: "70%"}}>
-                            <div className="price" style={{margin: "auto", textAlign: "center", fontSize: "6vm", height: "3vw"}}>Price</div>
-                              <button style={{margin: "auto", fontSize: "2vw", width: "15vw", paddingTop: "0", paddingBottom: "0"}}>Purchase Now</button>
-                              <button style={{margin: "auto", marginBottom: "10px", fontSize: "2vw", width: "15vw", paddingTop: "0", paddingBottom: "0"}}>Add to Cart</button>
+              <div className="text" style={{margin: "auto", width: "40%", padding: "0px", height: "100%", display: "flex", flexDirection: "column", alignContent: "center", height: "100%"}}>
+                            <div className="price" style={{margin: "auto", padding:"0", textAlign: "center", fontSize: "6vm"}}>Price</div>
+                              <button style={{margin: "auto", paddingTop: "0", paddingBottom: "0"}}>Purchase Now</button>
+                              <button style={{margin: "auto", marginBottom: "20px", paddingTop: "0", paddingBottom: "0"}}>Add to Cart</button>
                             </div>
               </div>
             </div>
