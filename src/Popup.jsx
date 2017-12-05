@@ -17,14 +17,14 @@ class MyPopup extends Component {
                 <button onClick={this.props.closePopup} className ="exitButton"></button>
               </div>
               <div className="popup_div" style={{height: "40%"}}>
-                <img/>
+                <img src={this.props.image} />
                 <div className="text" style={{margin: "0px", width: "60%", height: "100%", paddingLeft: "20px", paddingRight: "20px", paddingTop: "0px"}}>
                     <li style={{display: "flex", flexDirection: "row", justifyContent: 'space-between', height: "100vh"}}>
                          <div style={{width: "100%", height: "100%", rightPadding: "20px"}}>
-                            <li className="name" style={{marginBottom:"5px", padding: "0"}}> Name</li>
-                            <div className="author" style={{marginBottom:"5px", padding: "0"}}>Author</div>
-                            <div className="genre" style={{marginBottom:"5px", padding: "0"}}>Genre</div>
-                            <div className="author" style={{marginBottom:"5px", padding: "0"}}>Pages</div>
+                            <li className="name" style={{marginBottom:"5px", padding: "0"}}>{this.props.name}</li>
+                            <div className="author" style={{marginBottom:"5px", padding: "0"}}>By: {this.props.author}</div>
+                            <div className="genre" style={{marginBottom:"5px", padding: "0"}}>Genre: {this.props.genre}</div>
+                            <div className="author" style={{marginBottom:"5px", padding: "0"}}>Pages: {this.props.pages}</div>
                         </div>
                     </li>
                   </div>
@@ -39,7 +39,7 @@ class MyPopup extends Component {
               </div>
               <div className="popup_div" style={{background: "green", height: "20%"}}>
               <div className="text" style={{margin: "auto", width: "40%", padding: "0px", height: "100%", display: "flex", flexDirection: "column", alignContent: "center", height: "100%"}}>
-                            <div className="price" style={{margin: "auto", padding:"0", textAlign: "center", fontSize: "6vm"}}>Price</div>
+                            <div className="price" style={{margin: "auto", padding:"0", textAlign: "center", fontSize: "6vm"}}>{this.props.price}</div>
                               <button style={{margin: "auto", paddingTop: "0", paddingBottom: "0"}}>Purchase Now</button>
                               <button style={{margin: "auto", marginBottom: "20px", paddingTop: "0", paddingBottom: "0"}}>Add to Cart</button>
                             </div>

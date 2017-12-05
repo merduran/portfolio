@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MyPopup from './Popup';
+import Card from './Card';
 /*
  The list component will take the list of items passed in as a property
  and create an HTML list with those item. In this example, we are passing in the
@@ -9,30 +10,16 @@ import MyPopup from './Popup';
 class List extends Component {
     constructor() {
     super();
-    this.state = {
-      showPopup: false
-    };
+
   }
 
-  togglePopup() {
-    this.setState({
-      showPopup: !this.state.showPopup
-    });
-  }
 
    renderList() {
         const items = this.props.items.map(item => {
           return (
-                <div className="Card">
-                    <div className="Border">
-                    <li className="BookTitle" key={item.name}>{item.name}</li>
-                    <div className="BookAuthor" key={item.author}>By {item.author}</div>
-                    <img className="Book" onClick={this.togglePopup.bind(this)} src={item.src} />
-                    <div className="BookPrice" key={item.price}>${item.price}</div>
-                    </div>
-                </div>)
+              <Card className="Card" name={item.name} pages={item.page} author={item.author} image={item.src} price={item.price} genre={item.genre} />
+                )
           });
-
        return items;
    }
 
@@ -42,8 +29,7 @@ class List extends Component {
                <ul>
                    {this.renderList()}
                </ul>
-               {this.state.showPopup ? <MyPopup closePopup={this.togglePopup.bind(this)}/> : null }
-            </div>
+        </div>
        );
    }
 }
