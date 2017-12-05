@@ -13,6 +13,7 @@ class FilteredList extends Component {
            genre: "",
            min: "",
            max: "",
+           sort: "",
        };
    }
     // Sets the state whenever the user types on the search bar
@@ -93,6 +94,7 @@ class FilteredList extends Component {
     }
 
     sortList = (eventKey) => {
+        this.setState({sort: eventKey});
           if (eventKey === "default"){
             this.props.items.sort(function(a, b){
               if (a.name < b.name){
@@ -120,16 +122,16 @@ class FilteredList extends Component {
 
             <div className="App-header">
                     <h1 className="Logo">Remzi Kitabevi</h1>
-                    <div style={{alignContent: 'center'}}>
-                        <label className="Search">
+                    <div className="Options">
+                        <div className="Search">
                             <h2 className="Title">Search</h2>
                             <input className="Input" type="text" placeholder="which book..." onChange={this.onSearch} />
-                        </label>
+                        </div>
 
                         <div className="Choices">
                             <label className="Search">
                                 <h2 className="Title">Genre</h2>
-                                <DropdownButton id="typeDropdown" title={"Genre"}>
+                                <DropdownButton id="typeDropdown" title={this.state.genre}>
                                     <MenuItem eventKey="All" onSelect= {this.setGenre}>All</MenuItem>
                                     <MenuItem eventKey="Children" onSelect= {this.setGenre}>Children</MenuItem>
                                     <MenuItem eventKey="Mystery" onSelect= {this.setGenre}>Mystery</MenuItem>
@@ -140,7 +142,7 @@ class FilteredList extends Component {
 
                             <label className="Search">
                                 <h2 className="Title">Price Range</h2>
-                                <DropdownButton id="typeDropdown" title={"Range"}>
+                                <DropdownButton id="typeDropdown" title={"$" + this.state.min + " - " + "$" +this.state.max}>
                                     <MenuItem eventKey="all" onSelect= {this.setPriceRange}>All</MenuItem>
                                     <MenuItem eventKey="first" onSelect= {this.setPriceRange}>$5 - $8</MenuItem>
                                     <MenuItem eventKey="second" onSelect= {this.setPriceRange}>$8 - $11</MenuItem>
@@ -151,7 +153,7 @@ class FilteredList extends Component {
 
                             <label className="Search">
                                 <h2 className="Title">Sort By</h2>
-                                <DropdownButton id="typeDropdown" title={"Sort"}>
+                                <DropdownButton id="typeDropdown" title={this.state.sort}>
                                     <MenuItem eventKey="default" onSelect= {this.sortList}>Default</MenuItem>
                                     <MenuItem eventKey="price" onSelect= {this.sortList}>By Price</MenuItem>
                                     <MenuItem eventKey="page" onSelect= {this.sortList}>By Page</MenuItem>
