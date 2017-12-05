@@ -39,7 +39,7 @@ class MyPopup extends Component {
               </div>
               <div className="popup_div" style={{background: "green", height: "20%"}}>
               <div className="text" style={{margin: "auto", width: "40%", padding: "0px", height: "100%", display: "flex", flexDirection: "column", justifyContent: 'space-between', height: "70%"}}>
-                            <div className="price" style={{margin: "auto", textAlign: "center", fontSize: "6vm", height: "3vw"}}>Price</div>
+                            <div className="price" style={{margin: "auto", textAlign: "center", fontSize: "6vm", height: "3vw"}}>{this.props.price}</div>
                               <button style={{margin: "auto", fontSize: "2vw", width: "15vw", paddingTop: "0", paddingBottom: "0"}}>Purchase Now</button>
                               <button style={{margin: "auto", marginBottom: "10px", fontSize: "2vw", width: "15vw", paddingTop: "0", paddingBottom: "0"}}>Add to Cart</button>
                             </div>
