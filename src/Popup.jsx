@@ -25,7 +25,10 @@ class MyPopup extends Component {
                             <div className="author">Author</div>
                             <div className="genre">Genre</div>
                             <div className="author">Pages</div>
-                            <div className="author">Description</div>
+                            <div className="author" style ={{}}>Description <br/>
+                            ajdfbdkasjbfjkadsbfkjlasdbfjbasdjfbasdjfbaskdjbfmasdbfmasdbfm,asdbf,MyPopupsdf
+                            asdfasdfasdf
+                            </div>
                         </div>
                     </li>
                   </div>
@@ -36,7 +39,7 @@ class MyPopup extends Component {
               <div className="text" style={{margin: "auto", width: "40%", padding: "0px", height: "100%", display: "flex", flexDirection: "column", justifyContent: 'space-between', height: "70%"}}>
                             <div className="price" style={{textAlign: "center"}}>Price</div>
                             <button>Purchase Now</button>
-                            <button>Add to Cart</button>
+                            <button style={{marginBottom: "10px"}}>Add to Cart</button>
                   </div>
               </div>
             </div>
