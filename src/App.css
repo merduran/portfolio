@@ -1,11 +1,12 @@
 .App {
   justify-content: center;
   text-align: center;
+  background-color: #F4ECE6;
 }
 
 .description{
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   flex-direction: row;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2vw;

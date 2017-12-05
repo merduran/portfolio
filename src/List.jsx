@@ -23,25 +23,6 @@ class List extends Component {
    renderList() {
         const items = this.props.items.map(item => {
           return (
-<<<<<<< HEAD
-              <div className="container">
-                <img onClick={this.togglePopup.bind(this)} className="profilepic" src={item.src} />
-                  <div className="text">
-                    <li className="name" key={item.name}>{item.name}</li>
-                    <li style={{display: "flex", flexDirection: "row", justifyContent: 'space-between'}}>
-                        <div>
-                            <div className="author" key={item.author}>By {item.author}</div>
-                            <div className="genre" key={item.genre}>{item.genre}</div>
-                            <div className="author" key={item.page}>{item.page} pages</div>
-                        </div>
-                        <div>
-                            <div className="price" key={item.price}>${item.price}</div>
-                            <button onClick={this.togglePopup.bind(this)} >Purchase Now</button>
-                        </div>
-                    </li>
-                  </div>
-              </div>)
-=======
                 <div className="Card">
                     <div className="Border">
                     <li className="BookTitle" key={item.name}>{item.name}</li>
@@ -50,7 +31,6 @@ class List extends Component {
                     <div className="BookPrice" key={item.price}>${item.price}</div>
                     </div>
                 </div>)
->>>>>>> b2f522675677133800a325da2f6521ed478b6bec
           });
 
        return items;
