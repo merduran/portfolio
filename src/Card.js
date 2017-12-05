@@ -34,10 +34,8 @@ class Card extends Component {
 
    render() {
        return (
-           <div>
-               <ul>
+           <div  style={{display: "inline-block"}}>
                    {this.renderList()}
-               </ul>
                {this.state.showPopup ? <MyPopup closePopup={this.togglePopup.bind(this)} image={this.props.image} name={this.props.name} author={this.props.author} price={this.props.price} pages={this.props.pages} genre={this.props.genre}/> : null }
             </div>
        );
