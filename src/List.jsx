@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Popup from 'react-popup';
+import MyPopup from './Popup';
 /*
  The list component will take the list of items passed in as a property
  and create an HTML list with those item. In this example, we are passing in the
@@ -7,11 +7,24 @@ import Popup from 'react-popup';
   as long as it has a name.
 */
 class List extends Component {
+    constructor() {
+    super();
+    this.state = {
+      showPopup: false
+    };
+  }
+
+  togglePopup() {
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
+  }
+
    renderList() {
         const items = this.props.items.map(item => {
           return (
               <div className="container">
-                <img className="profilepic" src={item.src} />
+                <img onClick={this.togglePopup.bind(this)} className="profilepic" src={item.src} />
                   <div className="text">
                     <li className="name" key={item.name}>{item.name}</li>
                     <li style={{display: "flex", flexDirection: "row", justifyContent: 'space-between'}}>
@@ -22,7 +35,7 @@ class List extends Component {
                         </div>
                         <div>
                             <div className="price" key={item.price}>${item.price}</div>
-                            <button>Purchase Now</button>
+                            <button onClick={this.togglePopup.bind(this)} >Purchase Now</button>
                         </div>
                     </li>
                   </div>
@@ -34,9 +47,12 @@ class List extends Component {
 
    render() {
        return (
-           <ul>
-               {this.renderList()}
-           </ul>
+           <div>
+               <ul>
+                   {this.renderList()}
+               </ul>
+               {this.state.showPopup ? <MyPopup closePopup={this.togglePopup.bind(this)}/> : null }
+            </div>
        );
    }
 }

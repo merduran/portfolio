@@ -1,6 +1,15 @@
 .App {
   justify-content: center;
   text-align: center;
+  background-color: red;
+}
+
+.description{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2vw;
 }
 
 .exitButton{
@@ -30,10 +39,11 @@
 .popup_inner {
   align-items: center;
   width: 60vw;
-  height: 90vh;
+  height: 80vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5vw;
+  margin-bottom: 5vw;
   background: white;
   border-radius: 20px;
   justify-content: space-between;
@@ -152,7 +162,7 @@ ul{
 .price {
   height: 10vw;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 6vw;
+  font-size: 3vw;
   text-align: center;
   padding-top: 0.25vw;
   padding-bottom: 0.25vw;

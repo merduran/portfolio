@@ -18,16 +18,15 @@ class MyPopup extends Component {
               </div>
               <div className="popup_div" style={{height: "40%"}}>
                 <img/>
-                <div className="text" style={{margin: "0px", width: "40%", padding: "0px", height: "100%"}}>
+                <div className="text" style={{margin: "0px", width: "60%", height: "100%", paddingLeft: "20px", paddingRight: "20px", paddingTop: "0px"}}>
                     <li style={{display: "flex", flexDirection: "row", justifyContent: 'space-between', height: "100%"}}>
-                        <div>
+                         <div style={{width: "100%", height: "100%", rightPadding: "20px"}}>
                             <li className="name"> Name</li>
                             <div className="author">Author</div>
                             <div className="genre">Genre</div>
                             <div className="author">Pages</div>
-                            <div className="author" style ={{}}>Description <br/>
-                            ajdfbdkasjbfjkadsbfkjlasdbfjbasdjfbasdjfbaskdjbfmasdbfmasdbfm,asdbf,MyPopupsdf
-                            asdfasdfasdf
+                            <div className="description">Description <br/> 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </div>
                         </div>
                     </li>
@@ -37,10 +36,10 @@ class MyPopup extends Component {
               </div>
               <div className="popup_div" style={{background: "green"}}>
               <div className="text" style={{margin: "auto", width: "40%", padding: "0px", height: "100%", display: "flex", flexDirection: "column", justifyContent: 'space-between', height: "70%"}}>
-                            <div className="price" style={{textAlign: "center"}}>Price</div>
-                            <button>Purchase Now</button>
-                            <button style={{marginBottom: "10px"}}>Add to Cart</button>
-                  </div>
+                            <div className="price" style={{textAlign: "center", fontSize: "5vm", height: "3vw"}}>Price</div>
+                              <button style={{fontSize: "2vw", width: "15vw", paddingTop: "0", paddingBottom: "0"}}>Purchase Now</button>
+                              <button style={{marginBottom: "10px", fontSize: "5px", width: "auto"}}>Add to Cart</button>
+                            </div>
               </div>
             </div>
             </div>

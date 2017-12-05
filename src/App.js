@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import FilteredList from './FilteredList';
-import MyPopup from './Popup';
 
 /*
     This list of produce that is passed into the FilteredList component.
@@ -31,7 +30,6 @@ class App extends Component {
                   component the items property.
                 */}
                <FilteredList items={produce} />
-               <MyPopup></MyPopup>
            </div>
        );
    }
