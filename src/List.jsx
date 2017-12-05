@@ -21,7 +21,7 @@ class List extends Component {
                             <div className="author" key={item.page}>{item.page} pages</div>
                         </div>
                         <div>
-                            <li className="price" key={item.price}>${item.price}</li>
+                            <div className="price" key={item.price}>${item.price}</div>
                             <button>Purchase Now</button>
                         </div>
                     </li>
