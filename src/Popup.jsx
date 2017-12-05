@@ -18,11 +18,10 @@ class MyPopup extends Component {
               </div>
               <div className="popup_div">
                 <img/>
-
-                <div className="text" style={{margin: "0px", width: "40%"}}>
-                    <li className="name"> Name</li>
-                    <li style={{display: "flex", flexDirection: "row", justifyContent: 'space-between'}}>
+                <div className="text" style={{margin: "0px", width: "40%", padding: "0px", height: "100%"}}>
+                    <li style={{display: "flex", flexDirection: "row", justifyContent: 'space-between', height: "100%"}}>
                         <div>
+                            <li className="name"> Name</li>
                             <div className="author">Author</div>
                             <div className="genre">Genre</div>
                             <div className="author">Pages</div>
@@ -31,9 +30,7 @@ class MyPopup extends Component {
                     </li>
                   </div>
               </div>
-
-
-              </div>
+              
               <div className="popup_div" style={{background: "blue"}}>
               </div>
               <div className="popup_div" style={{background: "green"}}>
@@ -41,6 +38,7 @@ class MyPopup extends Component {
                             <button>Purchase Now</button>
               </div>
               
+            </div>
             </div>
         );
    }
