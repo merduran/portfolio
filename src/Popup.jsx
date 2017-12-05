@@ -34,7 +34,7 @@ class MyPopup extends Component {
                   </div>
               </div>
               <div className="popup_div" style={{display: "flex", flexDirection: "column", justifyContent: 'space-between'}}>
-                <div className="description" style={{margin:"auto", paddingBottom: "20px"}}><p style={{fontSize:"1.5vmax", fontWeight:"bold", marginBottom:"0px"}}>Description</p> 
+                <div className="description" style={{margin:"auto", paddingBottom: "20px"}}><p style={{fontSize:"1.5vmax", fontWeight:"bold", marginBottom:"0px"}}>Description</p>
                   <p className="p2"style={{fontSize: "0.9vmax"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
                 <div className="description" style={{margin:"auto", margin:"auto", paddingTop: "1px", paddingBottom: "10px"}}><p style={{fontSize:"1.5vmax", fontWeight:"bold", marginBottom: "2px"}}>Comments</p>
@@ -55,7 +55,11 @@ class MyPopup extends Component {
               <div className="popup_div" style={{height: "20%"}}>
               <div className="text" style={{margin: "auto", width: "40%", padding: "0px", height: "100%", display: "flex", flexDirection: "column", alignContent: "center", height: "100%"}}>
                             <div className="price" style={{margin: "auto", padding:"0", textAlign: "center"}}>${this.props.price}</div>
+<<<<<<< HEAD
                              <button style={{margin: "auto", paddingTop: "0", paddingBottom: "0"}}>Purchase Now</button>
+=======
+                              <button style={{margin: "auto", paddingTop: "0", paddingBottom: "0"}}><a href={this.props.site}>Purchase Now</a></button>
+>>>>>>> e3681bfda20e1c72863678e50795b553c57e0ca6
                               <button style={{margin: "auto", marginBottom: "20px", paddingTop: "0", paddingBottom: "0"}}>Add to Cart</button>
                             </div>
               </div>
